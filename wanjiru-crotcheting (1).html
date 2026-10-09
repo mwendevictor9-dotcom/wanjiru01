@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wanjiru crotcheting | Fashion in Meru</title>
+<meta name="description" content="Wanjiru crotcheting is a fashion business in Meru offering crocheted clothing, made to order.">
+<style>
+:root{--a:#b4375a;--ad:#8f2a46;--bg:#fff;--t:#222;--m:#666;--l:#f6f1f3;--b:#e3d9dd}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--t);line-height:1.55;background:var(--bg)}
+a{color:var(--a)}
+header.top{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--b);z-index:20;display:flex;justify-content:space-between;align-items:center;padding:.7rem 1rem}
+header.top strong{color:var(--a)}
+header.top nav a{margin-left:.8rem;text-decoration:none;font-size:.9rem;color:var(--t)}
+.hide-m{display:none}
+@media(min-width:700px){.hide-m{display:inline}}
+.hero{background:var(--a);color:#fff;padding:3rem 1rem;text-align:center}
+.hero h1{margin:0 0 .5rem;font-size:1.8rem}
+.hero p{margin:0 auto 1.4rem;max-width:34rem;font-size:1.1rem}
+section{padding:2rem 1rem;max-width:56rem;margin:0 auto}
+section.alt{max-width:none;background:var(--l)}
+section.alt>div{max-width:56rem;margin:0 auto}
+h2{color:var(--a);margin-top:0}
+.btn{display:inline-block;background:var(--a);color:#fff;border:0;border-radius:6px;padding:.7rem 1.1rem;font-size:1rem;cursor:pointer;text-decoration:none;font-family:inherit}
+.btn:hover{background:var(--ad)}
+.btn:disabled{background:#bbb;cursor:not-allowed}
+.btn.o{background:#fff;color:var(--a);border:2px solid var(--a)}
+.hero .btn{background:#fff;color:var(--a);margin:.25rem}
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:#fff;border:1px solid var(--b);border-radius:8px;padding:1rem}
+.ph{background:#d9c3cb;color:#5a3a45;border-radius:8px;min-height:140px;display:flex;align-items:center;justify-content:center;text-align:center;padding:.5rem;font-size:.9rem}
+form{display:grid;gap:.7rem;max-width:30rem}
+label{font-size:.9rem;font-weight:600;display:grid;gap:.25rem}
+input,select,textarea{font:inherit;padding:.6rem;border:1px solid #bbb;border-radius:6px;width:100%}
+ul.clean{list-style:none;padding:0;margin:0}
+ul.clean li{padding:.5rem 0;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;gap:1rem;align-items:center}
+.note{color:var(--m);font-size:.9rem}
+#fab{position:fixed;right:1rem;bottom:1rem;z-index:30;display:flex;flex-direction:column;gap:.6rem;align-items:flex-end}
+#fab button{border-radius:999px;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+#bcount{background:#fff;color:var(--a);border-radius:999px;padding:0 .45rem;margin-left:.3rem;font-weight:700}
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:40;display:none;align-items:flex-end;justify-content:center}
+.overlay.open{display:flex}
+.sheet{background:#fff;width:100%;max-width:36rem;max-height:92vh;overflow:auto;border-radius:12px 12px 0 0;padding:1rem}
+.sheet header{display:flex;justify-content:space-between;align-items:center}
+.qty button{width:2rem;height:2rem;border:1px solid var(--a);background:#fff;color:var(--a);border-radius:4px;cursor:pointer;font-size:1rem}
+.qty span{display:inline-block;min-width:1.6rem;text-align:center}
+#chat{position:fixed;right:1rem;bottom:5.5rem;width:min(22rem,calc(100vw - 2rem));height:26rem;max-height:70vh;background:#fff;border:1px solid var(--b);border-radius:10px;box-shadow:0 4px 18px rgba(0,0,0,.3);z-index:35;display:none;flex-direction:column}
+#chat.open{display:flex}
+#chat .h{background:var(--a);color:#fff;padding:.6rem .8rem;border-radius:10px 10px 0 0;display:flex;justify-content:space-between}
+#chat .h button{background:none;border:0;color:#fff;font-size:1.2rem;cursor:pointer}
+#msgs{flex:1;overflow:auto;padding:.6rem;display:flex;flex-direction:column;gap:.4rem}
+.m{padding:.5rem .7rem;border-radius:10px;max-width:85%;font-size:.92rem;white-space:pre-wrap}
+.m.b{background:var(--l);align-self:flex-start}
+.m.u{background:var(--a);color:#fff;align-self:flex-end}
+#qr{display:flex;flex-wrap:wrap;gap:.3rem;padding:0 .6rem .4rem}
+#qr button{background:#fff;color:var(--a);border:1px solid var(--a);border-radius:999px;padding:.3rem .7rem;font-size:.85rem;cursor:pointer;font-family:inherit}
+#cf{display:flex;gap:.3rem;padding:.5rem;border-top:1px solid var(--b)}
+#cf input{flex:1}
+footer{background:#2b2b2b;color:#ddd;padding:1.5rem 1rem;text-align:center;font-size:.9rem}
+footer a{color:#fff}
+</style>
+</head>
+<body>
+<header class="top">
+<strong>Wanjiru crotcheting</strong>
+<nav><a href="#services" class="hide-m">Services</a><a href="#order">Order</a><a href="#book">Book</a><a href="#contact">Contact</a></nav>
+</header>
+
+<div class="hero">
+<h1>Wanjiru crotcheting</h1>
+<p>We make crocheted fashion in Meru, made to order and ready to wear.</p>
+<a class="btn" href="#order">Order now</a>
+<a class="btn" href="#book">Book appointment</a>
+</div>
+
+<section id="services">
+<h2>Services</h2>
+<div class="grid">
+<div class="card"><strong>Crocheted skirts</strong><p class="note">Made to order.</p></div>
+<div class="card"><strong>[Other service]</strong><p class="note">[Add more services here]</p></div>
+</div>
+<h2 style="margin-top:1.5rem">Photos</h2>
+<div class="grid">
+<div class="ph">[Photo: skirt]</div>
+<div class="ph">[Photo: workshop or shop]</div>
+<div class="ph">[Photo: finished work]</div>
+</div>
+</section>
+
+<section class="alt" id="pricing"><div>
+<h2>Pricing</h2>
+<ul class="clean"><li><span>Skirt</span><strong>KSh 2000</strong></li></ul>
+</div></section>
+
+<section id="order">
+<h2>Order</h2>
+<div class="grid">
+<div class="card">
+<div class="ph" style="margin-bottom:.6rem">[Photo: Skirt]</div>
+<strong>Skirt</strong><br>KSh 2000<br><br>
+<button class="btn" type="button" onclick="addItem('Skirt',2000)">Add to basket</button>
+</div>
+</div>
+<p class="note">Orders reach us only when you send the WhatsApp message from the basket.</p>
+</section>
+
+<section class="alt" id="book"><div>
+<h2>Book an appointment</h2>
+<form onsubmit="return wa(event,'Appointment request',[['Name','bn'],['Phone','bp'],['Service','bs'],['Preferred date','bd'],['Preferred time','bt']])">
+<label>Name<input id="bn" required></label>
+<label>Phone<input id="bp" type="tel" required></label>
+<label>Service<select id="bs"><option>Crocheted skirt</option><option>[Other service]</option></select></label>
+<label>Preferred date<input id="bd" type="date" required></label>
+<label>Preferred time<input id="bt" type="time" required></label>
+<button class="btn">Send request on WhatsApp</button>
+</form>
+<p class="note">This is a request. We will confirm with you.</p>
+</div></section>
+
+<section id="hours">
+<h2>Opening hours</h2>
+<ul class="clean">
+<li><span>Monday to Friday</span><span>[opening hours]</span></li>
+<li><span>Saturday</span><span>[opening hours]</span></li>
+<li><span>Sunday</span><span>[opening hours]</span></li>
+</ul>
+<h2 style="margin-top:1.5rem">Location</h2>
+<p>Meru, Kenya. [Street address / landmark]</p>
+<div class="ph">[Map or shop photo]</div>
+</section>
+
+<section class="alt" id="branches"><div>
+<h2>Branches</h2>
+<div class="card"><strong>Kerugoya</strong><br>Address: [address]<br>Phone: [branch phone]</div>
+</div></section>
+
+<section id="payments">
+<h2>Payment methods</h2>
+<ul class="clean"><li>Send money</li><li><a href="tel:0712999605">0712999605</a></li></ul>
+</section>
+
+<section class="alt" id="certs"><div>
+<h2>Certifications</h2>
+<ul><li>Certified by kemu</li></ul>
+<h2>Awards</h2>
+<ul><li>Nobel</li></ul>
+</div></section>
+
+<section id="quote">
+<h2>Request a quote</h2>
+<form onsubmit="return wa(event,'Quote request',[['Name','qn'],['Phone','qp'],['Needs','qd'],['Preferred contact time','qt']])">
+<label>Name<input id="qn" required></label>
+<label>Phone<input id="qp" type="tel" required></label>
+<label>What do you need?<textarea id="qd" rows="3" required></textarea></label>
+<label>Preferred contact time<input id="qt" placeholder="e.g. mornings"></label>
+<button class="btn">Request quote on WhatsApp</button>
+</form>
+</section>
+
+<section class="alt" id="waitlist"><div>
+<h2>Join the waitlist</h2>
+<form onsubmit="return wa(event,'Waitlist request',[['Name','wn'],['Phone','wp']])">
+<label>Name<input id="wn" required></label>
+<label>Phone<input id="wp" type="tel" required></label>
+<button class="btn">Join on WhatsApp</button>
+</form>
+</div></section>
+
+<section id="reviews">
+<h2>Reviews</h2>
+<p>Be the first to review us.</p>
+<h3>Leave a review</h3>
+<a class="btn" href="https://wa.me/254712999605?text=Hello%20Wanjiru%20crotcheting%2C%20I%20would%20like%20to%20leave%20a%20review%3A%20" target="_blank" rel="noopener">Review on WhatsApp</a>
+<a class="btn o" href="mailto:charitymwangi268@gmail.com?subject=Review">Review by email</a>
+</section>
+
+<section class="alt" id="contact"><div>
+<h2>Contact</h2>
+<p>Phone: <a href="tel:0712999605">0712999605</a><br>
+Email: <a href="mailto:charitymwangi268@gmail.com">charitymwangi268@gmail.com</a></p>
+<a class="btn" href="tel:0712999605">Call us</a>
+<a class="btn" href="https://wa.me/254712999605" target="_blank" rel="noopener">WhatsApp</a>
+</div></section>
+
+<section id="faq">
+<h2>FAQ</h2>
+<p><strong>How do I order?</strong><br>Add items to your basket and send the order on WhatsApp.</p>
+<p><strong>How do I pay?</strong><br>Send money to 0712999605.</p>
+<p><strong>Is a booking confirmed straight away?</strong><br>No. A booking is a request and we will confirm it with you.</p>
+</section>
+
+<section class="alt" id="privacy"><div>
+<h2>Privacy policy</h2>
+<p><strong>What we collect:</strong> your name, phone number, and order, booking, waitlist or quote details that you send us through WhatsApp, email, or the chat assistant.</p>
+<p><strong>Why:</strong> to respond to you, prepare and deliver orders, and manage bookings.</p>
+<p><strong>Who sees it:</strong> the business owner and staff. Booking details made through the chat assistant are passed to the owner through Web3Forms. WhatsApp messages are handled by WhatsApp under its own terms. [Other processors]</p>
+<p><strong>How long we keep it:</strong> [retention period].</p>
+<p><strong>Deletion:</strong> to ask for your data to be deleted or corrected, contact us on <a href="tel:0712999605">0712999605</a>, WhatsApp, or <a href="mailto:charitymwangi268@gmail.com">charitymwangi268@gmail.com</a>.</p>
+<p>We aim to follow the Kenya Data Protection Act 2019. [Data controller / registration details]</p>
+<p class="note">Your basket is saved only in your own browser.</p>
+</div></section>
+
+<footer>
+<p>&copy; Wanjiru crotcheting, Meru. <a href="#privacy">Privacy policy</a></p>
+</footer>
+
+<div id="fab">
+<button class="btn" id="chatbtn" type="button" aria-label="Open chat">Chat</button>
+<button class="btn" id="basketbtn" type="button" aria-label="Open basket">Basket<span id="bcount">0</span></button>
+</div>
+
+<div id="chat" role="dialog" aria-label="Chat assistant">
+<div class="h"><span>Chat with us</span><button type="button" id="chatx" aria-label="Close chat">&times;</button></div>
+<div id="msgs" aria-live="polite"></div>
+<div id="qr"></div>
+<form id="cf" onsubmit="return false"><input id="ci" placeholder="Type a message" autocomplete="off"><button class="btn">Send</button></form>
+</div>
+
+<div class="overlay" id="bov">
+<div class="sheet">
+<header><h2 style="margin:0">Your basket</h2><button class="btn o" type="button" id="bclose">Close</button></header>
+<p id="empty">Your basket is empty.</p>
+<ul class="clean" id="blist"></ul>
+<p><strong>Grand total: <span id="gt">KSh 0</span></strong></p>
+<button class="btn o" type="button" id="clr">Clear basket</button>
+<h3>Your details</h3>
+<form id="of" onsubmit="return placeOrder(event)">
+<label>Name<input id="on" required></label>
+<label>Phone<input id="op" type="tel" required></label>
+<label>Delivery location<input id="ol" required></label>
+<label>Note (optional)<textarea id="onote" rows="2"></textarea></label>
+<p class="note">How to pay: send money to 0712999605.</p>
+<button class="btn" id="place" disabled>Place order on WhatsApp</button>
+</form>
+<p class="note">The order reaches the business only when you send the WhatsApp message.</p>
+</div>
+</div>
+
+<script>
+var NUM='254712999605',W='https://wa.me/'+NUM;
+function open_(t){window.open(W+'?text='+encodeURIComponent(t),'_blank','noopener')}
+function wa(e,title,f){e.preventDefault();var t='Hello Wanjiru crotcheting, '+title+':\n';f.forEach(function(x){t+=x[0]+': '+document.getElementById(x[1]).value+'\n'});open_(t);return false}
+
+/* Basket */
+var basket=[];
+try{basket=JSON.parse(localStorage.getItem('wb')||'[]');if(!Array.isArray(basket))basket=[]}catch(e){basket=[]}
+function save(){try{localStorage.setItem('wb',JSON.stringify(basket))}catch(e){}}
+function addItem(n,p){var i=basket.find(function(x){return x.n===n});if(i)i.q++;else basket.push({n:n,p:p,q:1});save();render()}
+function chg(i,d){basket[i].q+=d;if(basket[i].q<1)basket.splice(i,1);save();render()}
+function rem(i){basket.splice(i,1);save();render()}
+function total(){return basket.reduce(function(s,x){return s+x.p*x.q},0)}
+function render(){
+var l=document.getElementById('blist');l.innerHTML='';
+basket.forEach(function(x,i){
+var li=document.createElement('li');li.style.flexWrap='wrap';
+li.innerHTML='<span><strong></strong><br>KSh '+x.p+' each</span><span class="qty"><button type="button" aria-label="Decrease">-</button><span>'+x.q+'</span><button type="button" aria-label="Increase">+</button></span><span>KSh '+(x.p*x.q)+'</span><button type="button" class="btn o" style="padding:.3rem .6rem">Remove</button>';
+li.querySelector('strong').textContent=x.n;
+var b=li.querySelectorAll('button');
+b[0].onclick=function(){chg(i,-1)};b[1].onclick=function(){chg(i,1)};b[2].onclick=function(){rem(i)};
+l.appendChild(li)});
+document.getElementById('empty').style.display=basket.length?'none':'block';
+document.getElementById('gt').textContent='KSh '+total();
+document.getElementById('place').disabled=!basket.length;
+document.getElementById('bcount').textContent=basket.reduce(function(s,x){return s+x.q},0)}
+function placeOrder(e){e.preventDefault();if(!basket.length)return false;
+var t='Hello Wanjiru crotcheting, I would like to place an order:\n';
+basket.forEach(function(x){t+='- '+x.n+' x'+x.q+' = KSh '+(x.p*x.q)+'\n'});
+t+='Grand total: KSh '+total()+'\n\nName: '+document.getElementById('on').value+'\nPhone: '+document.getElementById('op').value+'\nDelivery location: '+document.getElementById('ol').value+'\nNote: '+(document.getElementById('onote').value||'None')+'\n\nPayment: Send money to 0712999605 (I will pay and share the confirmation).';
+open_(t);return false}
+document.getElementById('basketbtn').onclick=function(){document.getElementById('bov').classList.add('open')};
+document.getElementById('bclose').onclick=function(){document.getElementById('bov').classList.remove('open')};
+document.getElementById('clr').onclick=function(){basket=[];save();render()};
+render();
+
+/* Chat */
+var SERV=['Skirt'],PRICES='Skirt: KSh 2000',
+HOURS='[opening hours] - our hours have not been added yet.',
+chatEl=document.getElementById('chat'),msgs=document.getElementById('msgs'),qr=document.getElementById('qr'),
+st=null,bk={};
+function say(t,c){var d=document.createElement('div');d.className='m '+c;d.textContent=t;msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight}
+function btns(a){qr.innerHTML='';a.forEach(function(x){var b=document.createElement('button');b.type='button';b.textContent=x[0];b.onclick=function(){user(x[1]||x[0])};qr.appendChild(b)})}
+function home(){btns([['Book an appointment'],['See prices'],['Opening hours'],['Talk to the owner']])}
+function waLink(t,label){var b=document.createElement('a');b.className='btn';b.style.alignSelf='flex-start';b.textContent=label||'Send on WhatsApp';b.href=W+'?text='+encodeURIComponent(t);b.target='_blank';b.rel='noopener';msgs.appendChild(b);msgs.scrollTop=msgs.scrollHeight}
+function owner(){say('I can connect you to the owner on WhatsApp.','b');waLink('Hello Wanjiru crotcheting, I have a question: ','Chat with the owner')}
+function user(t){say(t,'u');reply(t.trim())}
+function reply(t){var l=t.toLowerCase();
+if(st){return flow(t,l)}
+if(/book|appointment/.test(l)){st='service';bk={};say('Which service would you like?','b');btns(SERV.map(function(s){return [s]}).concat([['Cancel']]));return}
+if(/price|cost|how much|skirt|prices/.test(l)){say('Our prices:\n'+PRICES+'\nYou can add items to the basket on this page.','b');home();return}
+if(/hour|open|close|time/.test(l)){say('Opening hours: '+HOURS,'b');home();return}
+if(/where|location|branch|kerugoya|meru/.test(l)){say('We are in Meru, with a branch in Kerugoya. Street addresses have not been added yet.','b');home();return}
+if(/pay|mpesa|m-pesa|send money|till/.test(l)){say('Payment: Send money to 0712999605.','b');home();return}
+if(/phone|call|contact|email|whatsapp/.test(l)){say('Phone: 0712999605\nEmail: charitymwangi268@gmail.com\nWhatsApp: 0712999605','b');home();return}
+if(/owner|human|person|talk/.test(l)){owner();home();return}
+if(/hi|hello|hey|habari/.test(l)){say('Hello! How can I help?','b');home();return}
+say("Sorry, I don't have that information.",'b');owner();home()}
+function flow(t,l){
+if(/^cancel$/.test(l)){st=null;say('Booking cancelled.','b');home();return}
+if(st==='service'){var s=SERV.find(function(x){return x.toLowerCase()===l});if(!s){say('Please choose a service from the buttons.','b');return}bk.service=s;st='date';qr.innerHTML='';say('What date would you like? (e.g. 2025-07-15)','b');btns([['Cancel']]);return}
+if(st==='date'){var d=new Date(t);if(isNaN(d)){say('Please type a date like 2025-07-15.','b');return}bk.date=t;st='time';say('What time would you prefer? (e.g. 14:00)','b');return}
+if(st==='time'){bk.time=t;st='name';say('Your name?','b');return}
+if(st==='name'){bk.name=t;st='phone';say('Your phone number?','b');return}
+if(st==='phone'){bk.phone=t;st='confirm';say('Please check your request:\nService: '+bk.service+'\nDate: '+bk.date+'\nTime: '+bk.time+'\nName: '+bk.name+'\nPhone: '+bk.phone+'\n\nSend this request?','b');btns([['Confirm','yes'],['Cancel']]);return}
+if(st==='confirm'){if(/^(yes|confirm)/.test(l)){send()}else{say('Please press Confirm or Cancel.','b')}return}}
+function send(){
+var msg='Booking request: '+bk.service+' on '+bk.date+' at '+bk.time+'. Name: '+bk.name+', Phone: '+bk.phone;
+st=null;qr.innerHTML='';
+say('Sending your request to the owner...','b');
+var done=false;
+try{fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({access_key:'[access key]',subject:'New booking request - Wanjiru crotcheting',name:bk.name,phone:bk.phone,service:bk.service,date:bk.date,time:bk.time,message:msg})}).then(function(r){return r.json()}).then(function(j){
+say(j&&j.success?'Your request has been sent. This is a request only, not a confirmed booking. The business will contact you to confirm.':'We could not send the alert automatically. Please use the WhatsApp button below so the owner gets your request. It is not confirmed until the business replies.','b')}).catch(function(){say('We could not send the alert automatically. Please use the WhatsApp button below so the owner gets your request. It is not confirmed until the business replies.','b')})}catch(e){say('We could not send the alert automatically. Please use the WhatsApp button below.','b')}
+waLink('Hello Wanjiru crotcheting, I would like to request a booking:\nService: '+bk.service+'\nDate: '+bk.date+'\nTime: '+bk.time+'\nName: '+bk.name+'\nPhone: '+bk.phone);
+home()}
+document.getElementById('chatbtn').onclick=function(){chatEl.classList.toggle('open');if(!msgs.children.length){say('Hi! I am the Wanjiru crotcheting assistant. I can share prices, hours and contact details, or help you request a booking. Booking details are passed to the owner through Web3Forms.','b');home()}};
+document.getElementById('chatx').onclick=function(){chatEl.classList.remove('open')};
+document.getElementById('cf').onsubmit=function(e){e.preventDefault();var i=document.getElementById('ci');if(i.value.trim()){var v=i.value;i.value='';user(v)}return false};
+</script>
+</body>
+</html>
